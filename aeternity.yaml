@@ -1,0 +1,61 @@
+chain:
+  consensus:
+    '0':
+      config:
+        child_block_time: 3000
+        child_block_production_time: 500
+        child_epoch_length: 600
+        contract_owner: 'ak_11111111111111111111111111111115rHyByZ'
+        default_pinning_behavior: true
+        election_contract: 'ct_LRbi65kmLtE7YMkG6mvG5TxAXTsPJDZjAtsPuaXtRyPA7gnfJ'
+        fixed_coinbase: 100000000000000000000
+        parent_chain:
+          consensus:
+            network_id: 'ae_uat'
+            type: 'AE2AE'
+          parent_epoch_length: 10
+          polling:
+            fetch_interval: 500
+            nodes:
+              - 'https://testnet.aeternity.io'
+          start_height: 1125109
+        pinners:
+          - parent_chain_account:
+              owner: 'ak_UTrXD1FyDnKpZB9kYm1odwnk7AcGpBtem2CfpVjvK6jHrBg54'
+              priv: '8b0e4dfefb8088ee3cb7843f7b564a42ce23c1fd6be288afa89a8cdc7377f5f06f442565d14ad25223e41ba3f22d4e3827acc860d2eca500b636ae899643ad40'
+              pub: 'ak_r19SugqJWvcuUPNGZmb4LLbHiQ8pFdRjenukdX3WYSVW6idWX'
+          - parent_chain_account:
+              owner: 'ak_2sZFizZPi87mjkWaA4mBQuxRN166u9AtBZuoeoNjJqwV9GYzNh'
+              priv: '21ad2d537640c5adaa65ccbdfa194f9491d31c1de02965b7c1373feb494a89218d773b66e9aad7378d791d1b1cc11240840de1f250902d3c98dd257effe8da8a'
+              pub: 'ak_25JZ4MQgSw1Rbgug7JM8MHf1oPWEVhEQyAsNsWBQsDkdzaSjHh'
+          - parent_chain_account:
+              owner: 'ak_KHeZVEqVzWJcvWtWF5TpvnrXXqwUFrkMuZSEW63A4YrXip7vW'
+              priv: 'a76159f4f90f1b7e31e1387fc5a25fb067f97f00befb4095d91eba007a4af4025b5ed66377f25e1287297a1d6120da50a6411235a7d49d3903c0e415c3f6a085'
+              pub: 'ak_hEwGpkDjKMr7HBz8Vas3wqGKN6QpZZj2U2zLfg3VYAY2be3d6'
+        pinning_reward_value: 1000000000000000000000
+        rewards_contract: 'ct_KJgjAXMtRF68AbT5A2aC9fTk8PA4WFv26cFSY27fXs6FtYQHK'
+        stakers:
+          - hyper_chain_account:
+              priv: '8d2be8f26a8c2679a39009b4b5e5a746fbd972c363d578bd67f11376336b08873e5bac0553835613f4d184c5e8acccfe4422c8d251d1f7a566c7b50ab2f77685'
+              pub: 'ak_UTrXD1FyDnKpZB9kYm1odwnk7AcGpBtem2CfpVjvK6jHrBg54'
+          - hyper_chain_account:
+              priv: 'ed8932567155e704d59704226632b8342b4033a029c1ee1f4fa17cff2d68c90bf67d6a93a58a0f8e0ad89c7bc7645c7434b7a3e60e67ddaa38642da5941d7751'
+              pub: 'ak_2sZFizZPi87mjkWaA4mBQuxRN166u9AtBZuoeoNjJqwV9GYzNh'
+          - hyper_chain_account:
+              priv: '15474a26eb38e3c7c6ddd589b1a1e84e150b0ae312fea9ab805249e5229b3f0d2985deec3d44c1684110a45c75d4aa966b6b4ec551911d99bfd1189986b90a33'
+              pub: 'ak_KHeZVEqVzWJcvWtWF5TpvnrXXqwUFrkMuZSEW63A4YrXip7vW'
+        staking_contract: 'ct_KJgjAXMtRF68AbT5A2aC9fTk8PA4WFv26cFSY27fXs6FtYQHK'
+      type: 'hyperchain'
+  hard_forks:
+    '6':
+      accounts_file: 'hc_liu_accounts.json'
+      contracts_file: 'hc_liu_contracts.json'
+      height: 0
+fork_management:
+  network_id: 'hc_liu'
+http:
+  endpoints:
+    dry-run: true
+    hyperchain: true
+mining:
+  autostart: true
